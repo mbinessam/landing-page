@@ -8,11 +8,8 @@ findInView = (section) => {
   let sectionCords = section.getBoundingClientRect();
   if (
     sectionCords.top >= 0 &&
-    sectionCords.left >= 0 &&
     sectionCords.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    sectionCords.right <=
-      (window.innerWidth || document.documentElement.clientWidth)
+      (window.innerHeight || document.documentElement.clientHeight)
   )
     return true;
 };
