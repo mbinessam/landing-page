@@ -4,7 +4,7 @@ const navMenu = document.querySelector("ul#navbar__list");
 
 // Check if section is in viewport or not
 findInView = (section) => {
-  // Resource: https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/
+  // Resource inspired solution: https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/
   let sectionCords = section.getBoundingClientRect();
   if (
     sectionCords.top >= 0 &&
